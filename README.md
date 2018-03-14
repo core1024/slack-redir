@@ -2,9 +2,11 @@
 
 Firefox add-on that replaces the slack-redir.net links in Slack with direct links in chat.
 
+You can find the add-on published [here](https://addons.mozilla.org/firefox/addon/slack-redir/).
+
 ## Packing
 
-1. Install `web-ext` tool
+1. Install `web-ext` tool:
 
 ```
 npm install --global web-ext

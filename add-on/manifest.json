@@ -7,7 +7,7 @@
 		"64": "slack-redir-64.png",
 		"128": "slack-redir-128.png"
 	},
-	"version": "1.0",
+	"version": "1.1",
 	"content_scripts": [
 		{
 			"matches": ["https://*.slack.com/*"],

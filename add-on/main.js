@@ -2,7 +2,7 @@ var linkPattern = 'a[href^="https://slack-redir.net/link?url="]';
 var element = document.getElementById('col_messages');
 
 function fixLink(link) {
-	link.href = decodeURIComponent(link.href.substr(link.href.indexOf('url=')+4).split('&').pop());
+	link.href = decodeURIComponent(link.href.substr(link.href.indexOf('url=')+4).split('&').shift());
 	link.innerText += " \uD83D\uDD17";
 	link.removeAttribute('onclick');
 	link.parentNode.replaceChild(link.cloneNode(true), link);

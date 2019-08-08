@@ -1,5 +1,5 @@
 var linkPattern = 'a[href^="https://slack-redir.net/link?url="]';
-var element = document.getElementById('col_messages');
+var element = document.body
 
 function fixLink(link) {
 	link.href = decodeURIComponent(link.href.substr(link.href.indexOf('url=')+4).split('&').shift());
